@@ -1,0 +1,62 @@
+name: "機能提案"
+description: "機能提案する際のテンプレート"
+title: "Request: "
+labels: ["1-ステータス: 1-待機中"]
+assignees: ["Geusen"]
+
+
+body:
+  - type: checkboxes
+    attributes:
+      label: 0.ラベル付け
+      description: ラベルを付け終えたらチェックしてください。
+      options:
+        - label: ①ステータス  状態を表すラベル(Issue作成時は待機中で良い)
+          required: true
+        - label: ②タイプ  作業の種別を表すラベル
+          required: true
+        - label: ③優先度  優先度を表すラベル(任意)
+        - label: ④作業量  想定される作業量を表すラベル(任意)
+
+  - type: textarea
+    attributes:
+      label: 1.提案内容
+      description: >
+        提案の内容を記入してください。
+      placeholder: >
+        例)- ○○機能の追加
+    validations:
+      required: true
+
+
+  - type: textarea
+    attributes:
+      label: 2.目的、理由
+      description: >
+        機能提案の目的や理由を記入してください。
+      placeholder: >
+        - ○○の効率化
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 3.関連Issue、Discussions(任意)
+      description: >
+        関連するIssue、PullRequests、Discussionsがある場合は記入してください。
+      placeholder: >
+        - #1
+
+  - type: textarea
+    attributes:
+      label: 4.タスク(任意)
+      description: >
+        想定されるタスクを記入してください。
+      placeholder: >
+        - [ ] ○○の追加
+
+  - type: textarea
+    attributes:
+      label: 5.補足(任意)
+      description: >
+        他に何かある場合は記入してください。
