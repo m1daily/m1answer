@@ -1,0 +1,19 @@
+div,b,ul,p {
+    margin: 0;
+}
+
+b {
+    font-size: 1.1em;
+}
+
+div {
+    margin-bottom: 2.5em;
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+li {
+    margin-bottom: 0.3em;
+}
